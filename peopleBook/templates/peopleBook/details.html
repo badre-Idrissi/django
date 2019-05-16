@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People Detail</title>
+</head>
+<body>
+    <h1> People Details </h1>
+   <div style="margin-left: 100px; border: black solid; padding: 10px; width:200px;">
+        Nom : <b>{{user.name}}</b><br>
+        Job : <b>{{user.job}}</b><br>
+        picture : <b>{{user.picture}}</b><br>
+        hobbies:<br>
+       <ul>
+           {% for hobby in user.hobbies %}
+                <li>{{hobby}}</li>
+           {% endfor %}
+       </ul>
+
+
+       {% comment "%}
+            <p>Commentaire Django </p>
+            login : admin
+            pwd: root
+       {% endcomment %}
+       <!--
+            commentaire html
+       -->
+   </div>
+
+
+</body>
+</html>

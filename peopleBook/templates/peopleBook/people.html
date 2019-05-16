@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>heros</title>
+</head>
+<body>
+<H1>heros</H1>
+<ul {% cycle 'red' 'blue' as rowcolors %}>
+    {% for user in users %}
+        <div ><li style="background-color: {% cycle rowcolors %}"> {{user.name}}</li></div>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
